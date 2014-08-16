@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require foundation
 //= require turbolinks
 //= require jquery
 //= require handlebars
@@ -24,3 +25,5 @@
 RaceBook = Ember.Application.create();
 
 //= require_tree .
+
+$(function(){ $(document).foundation(); });
