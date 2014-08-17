@@ -20,4 +20,17 @@ Race.create!(
   place_overall: 100,
   note: 'This race was awesome!')
 
+Race.create!(
+  name: 'Boston Marathon',
+  city: 'Boston',
+  state: 'MA',
+  date: '2009-04-19',
+  race_type: 'Marathon',
+  time: 300,
+  place_agegroup: 1104,
+  place_gender: 3000,
+  place_overall: 12500,
+  note: 'My only marathon')
+
+
 Image.create!(filename: 'fake.jpg', race_id: 1)
