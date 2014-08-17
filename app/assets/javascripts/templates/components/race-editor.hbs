@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="small-12 columns">
+    Race title '{{model.race_type}}' <br/>
+    Race name: {{input type="text" value=model.name}}<br/>
+    Race city: {{input type="text" value=model.city}}<br/>
+    Race state: {{input type="text" value=model.state}}<br/>
+    Date of race: {{input type="text" value=model.date}}<br/>
+    Race Type: {{view Ember.Select content=raceTypes value=model.race_type}}<br/>
+    Total Time: {{input type="text" value=model.time}}<br/>
+    Place - By Age Group {{input type="text" value=model.place_agegroup}}<br/>
+    Place - By Gender {{input type="text" value=model.place_gender}}<br/>
+    Place - Overall {{input type="text" value=model.place_overall}}<br/>
+    Race Note: {{textarea value=model.note}}<br/>
+    Images: <br/>
+    <a {{action 'save' model}} class="button">Save</a>
+  </div>
+</div>
