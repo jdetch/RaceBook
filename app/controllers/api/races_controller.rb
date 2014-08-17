@@ -14,6 +14,13 @@ class Api::RacesController < ApplicationController
     end
   end
 
+  def update
+    race = Race.find(params[:id])
+
+    race.update_attributes(race_params)
+    render json: race
+  end
+
   private
 
   def race_params
