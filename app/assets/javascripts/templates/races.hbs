@@ -1,5 +1,37 @@
 <div class="row">
   <div class="small-12 columns">
     <h1>Races Page</h1>
+      <table>
+        <thead>
+          <tr>
+            <td>Race Name</td>
+            <td>City</td>
+            <td>State</td>
+            <td>Date</td>
+            <td>Race Type</td>
+            <td>Time</td>
+            <td>Finishing Place - By Age Group</td>
+            <td>Finishing Place - By Gender</td>
+            <td>Finishing Place - Overall</td>
+            <td>Note</td>
+          </tr>
+        </thead>
+        </tbody>
+          <tr>
+          {{#each race in content}}
+            <td>{{race.name}}</td>
+            <td>{{race.city}}</td>
+            <td>{{race.state}}</td>
+            <td>{{race.date}}</td>
+            <td>{{race.race_type}}</td>
+            <td>{{race.time}}</td>
+            <td>{{race.place_agegroup}}</td>
+            <td>{{race.place_gender}}</td>
+            <td>{{race.place_overall}}</td>
+            <td>{{race.note}}</td>
+          </tr>
+        </tbody>
+          {{/each}}
+      </table>
   </div>
 </div>
