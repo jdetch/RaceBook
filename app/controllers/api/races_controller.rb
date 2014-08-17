@@ -12,7 +12,7 @@ class Api::RacesController < ApplicationController
   private
 
   def race_params
-      params.require(:race).permit(:name, :city, :state, :date, :type, :time, :place_agegroup, :place_gender, :place_overall, :note)
+      params.require(:race).permit(:name, :city, :state, :date, :race_type, :time, :place_agegroup, :place_gender, :place_overall, :note)
   end
 
 end
