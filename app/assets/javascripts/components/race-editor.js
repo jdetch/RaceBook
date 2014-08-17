@@ -6,7 +6,7 @@ RaceBook.RaceEditorComponent = Ember.Component.extend({
   }.on('init'),
   actions: {
     save: function(race){
-      console.log('yay');
+      race.save();
     }
   }
 });

@@ -7,6 +7,11 @@ class Api::RacesController < ApplicationController
 
   def create
     @race = Race.new(race_params)
+    if @race.save
+      render json: @race, status: :created
+    else
+      respond_with @race
+    end
   end
 
   private
