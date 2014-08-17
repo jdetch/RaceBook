@@ -14,6 +14,10 @@ class Api::RacesController < ApplicationController
     end
   end
 
+  def show
+    render json: Race.find(params[:id])
+  end
+
   def update
     race = Race.find(params[:id])
 
