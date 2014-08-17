@@ -7,6 +7,9 @@ RaceBook.RaceEditorComponent = Ember.Component.extend({
   actions: {
     save: function(race){
       race.save();
+    },
+    delete: function(race){
+      race.destroyRecord();
     }
   }
 });

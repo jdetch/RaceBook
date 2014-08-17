@@ -21,6 +21,12 @@ class Api::RacesController < ApplicationController
     render json: race
   end
 
+  def destroy
+    race = Race.find(params[:id])
+    race.destroy
+    render json: nil
+  end
+
   private
 
   def race_params

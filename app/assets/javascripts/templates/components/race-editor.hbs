@@ -12,6 +12,9 @@
     Place - Overall {{input type="text" value=model.place_overall}}<br/>
     Race Note: {{textarea value=model.note}}<br/>
     Images: <br/>
-    <a {{action 'save' model}} class="button">Save</a>
+    <a {{action 'save' model}} class="button">Save</a><br/>
+    {{#if model.id}}
+    <a {{action 'delete' model}} class="button">Delete</a>
+    {{/if}}
   </div>
 </div>
