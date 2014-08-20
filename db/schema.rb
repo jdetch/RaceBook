@@ -11,14 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140817165206) do
+ActiveRecord::Schema.define(version: 20140820035721) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "images", force: true do |t|
-    t.string  "filename"
-    t.integer "race_id"
+    t.integer  "race_id"
+    t.string   "race_image_file_name"
+    t.string   "race_image_content_type"
+    t.integer  "race_image_file_size"
+    t.datetime "race_image_updated_at"
   end
 
   add_index "images", ["race_id"], name: "index_images_on_race_id", using: :btree
