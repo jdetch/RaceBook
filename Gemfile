@@ -48,3 +48,7 @@ gem 'foundation-rails'
 
 # add foundation icons
 gem 'foundation-icons-sass-rails'
+
+gem 'paperclip'
+gem 'aws-sdk'
+gem 'dotenv-rails', :groups => [:development, :test]
