@@ -2,34 +2,18 @@ class Api::ImagesController < ApplicationController
   respond_to :json
 
   def index
-    respond_with Image.all
+    race = Race.find(params[:race_id])
+    respond_with race.images
   end
 
   def create
-    @image = Image.new(image_params)
-    if @image.save
-      render json: @image, status: :created
-    else
-      respond_with @image
-    end
+    race = Race.find(params[:race_id])
+    @image = race.images.create(race_image: params[:image])
+    render json: @image, status: :created
   end
 
   def show
     render json: Image.find(params[:id])
-  end
-
-  def update
-    image = Image.find(params[:id])
-
-    image.update_attributes(image_params)
-    render json: image
-    # if @image.save
-    #   flash[:notice] = "Your image was sucessfully created"
-    #   redirect_to(@image)
-    # else
-    #   flash.now[:alert] = "Your image was not able to be saved"
-    #   redirect_to :back
-    # end
   end
 
   def destroy
@@ -38,9 +22,4 @@ class Api::ImagesController < ApplicationController
     render json: nil
   end
 
-  private
-
-  def image_params
-    params.require(:image).permit(:race_image)
-  end
 end
