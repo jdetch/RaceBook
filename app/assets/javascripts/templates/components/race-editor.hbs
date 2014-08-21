@@ -11,7 +11,18 @@
     Place - By Gender {{input type="text" value=race.place_gender}}<br/>
     Place - Overall {{input type="text" value=race.place_overall}}<br/>
     Race Note: {{textarea value=race.note}}<br/>
-    Images
+    Images<br/>
+    <ul>
+    {{#each image in race.images}}
+        <li><image {{bind-attr src=image.url}}></li>
+    {{/each}}
+    </ul>
+    {{#if race.id}}
+        Upload Image(s):
+        <br/>
+        <br/>
+        {{image-uploader race=race}}
+    {{/if}}
     <a {{action 'save' race}} class="button">Save</a><br/>
     {{#if race.id}}
     <a {{action 'delete' race}} class="button">Delete</a>
