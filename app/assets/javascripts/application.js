@@ -17,6 +17,16 @@
 //= require jquery
 //= require handlebars
 //= require ember
+//= require blueimp-file-upload/cors/jquery.postmessage-transport
+//= require blueimp-file-upload/cors/jquery.xdr-transport
+//= require blueimp-file-upload/vendor/jquery.ui.widget
+//= require blueimp-file-upload/jquery.fileupload
+//= require blueimp-file-upload/jquery.fileupload-process
+//= require blueimp-file-upload/jquery.fileupload-validate
+//= require blueimp-file-upload/jquery.fileupload-image
+//= require blueimp-file-upload/jquery.fileupload-audio
+//= require blueimp-file-upload/jquery.fileupload-ui
+//= require blueimp-file-upload/jquery.iframe-transport
 //= require ember-data
 //= require_self
 //= require ./race_book

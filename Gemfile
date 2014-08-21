@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source 'https://rails-assets.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -48,3 +49,10 @@ gem 'foundation-rails'
 
 # add foundation icons
 gem 'foundation-icons-sass-rails'
+
+gem 'paperclip'
+gem 'aws-sdk'
+gem 'dotenv-rails', :groups => [:development, :test]
+
+# A Bower package served up as a gem; JavaScript packages
+gem 'rails-assets-blueimp-file-upload'
