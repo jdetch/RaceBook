@@ -12,7 +12,7 @@
     Place - Overall {{input type="text" value=race.place_overall}}<br/>
     Race Note: {{textarea value=race.note}}<br/>
     Images<br/>
-    <ul>
+    <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
     {{#each image in race.images}}
         <li><image {{bind-attr src=image.url}}></li>
     {{/each}}
