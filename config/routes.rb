@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'assets/index'
 
   namespace :api do
+    resources :users, only: [:create]
     resources :races do
       resources :images
     end
