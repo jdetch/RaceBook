@@ -1,31 +1,53 @@
-<div class="row">
-  <div class="small-12 columns">
-    Race title '{{race.name}}' <br/>
-    Race name: {{input type="text" value=race.name}}<br/>
-    Race city: {{input type="text" value=race.city}}<br/>
-    Race state: {{input type="text" value=race.state}}<br/>
-    Date of race: {{input type="text" value=race.date}}<br/>
-    Race Type: {{view Ember.Select content=raceTypes value=race.race_type}}<br/>
-    Total Time: {{input type="text" value=race.time}}<br/>
-    Place - By Age Group {{input type="text" value=race.place_agegroup}}<br/>
-    Place - By Gender {{input type="text" value=race.place_gender}}<br/>
-    Place - Overall {{input type="text" value=race.place_overall}}<br/>
-    Race Note: {{textarea value=race.note}}<br/>
-    Images<br/>
-    <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
-    {{#each image in race.images}}
-        <li><image {{bind-attr src=image.url}}></li>
-    {{/each}}
-    </ul>
-    {{#if race.id}}
-        Upload Image(s):
-        <br/>
-        <br/>
-        {{image-uploader race=race}}
-    {{/if}}
-    <a {{action 'save' race}} class="button">Save</a><br/>
-    {{#if race.id}}
-    <a {{action 'delete' race}} class="button">Delete</a>
-    {{/if}}
-  </div>
-</div>
+<form>
+    <div class="row">
+      <div class="small-12 columns">
+        Race title '{{race.name}}' <br/>
+        <label> Race name:
+            {{input type="text" value=race.name}}<br/>
+        </label>
+        <label> Race city:
+            {{input type="text" value=race.city}}<br/>
+        </label>
+        <label> Race state:
+            {{input type="text" value=race.state}}<br/>
+        </label>
+        <label> Date of race:
+            {{input type="text" value=race.date}}<br/>
+        </label>
+        <label> Race Type:
+            {{view Ember.Select content=raceTypes value=race.race_type}}<br/>
+        </label>
+        <label> Total Time:
+            {{input type="text" value=race.time}}<br/>
+        </label>
+        <label> Place - By Age Group
+            {{input type="text" value=race.place_agegroup}}<br/>
+        </label>
+        <label> Place - By Gender
+            {{input type="text" value=race.place_gender}}<br/>
+        </label>
+        <label> Place - Overall
+            {{input type="text" value=race.place_overall}}<br/>
+        </label>
+        <label> Race Note:
+        {{textarea value=race.note}}<br/>
+        </label>
+        Images<br/>
+        <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+        {{#each image in race.images}}
+            <li><image {{bind-attr src=image.url}}></li>
+        {{/each}}
+        </ul>
+        {{#if race.id}}
+            Upload Image(s):
+            <br/>
+            <br/>
+            {{image-uploader race=race}}
+        {{/if}}
+        <a {{action 'save' race}} class="button">Save</a><br/>
+        {{#if race.id}}
+        <a {{action 'delete' race}} class="button">Delete</a>
+        {{/if}}
+      </div>
+    </div>
+</form>
