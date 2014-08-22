@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     resources :users, only: [:create]
+    resources :sessions, only: [:create]
     resources :races do
       resources :images
     end
