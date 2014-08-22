@@ -9,5 +9,6 @@ RaceBook.Race = DS.Model.extend({
   place_gender: DS.attr(),
   place_overall: DS.attr(),
   note: DS.attr(),
-  images: DS.hasMany('image')
+  images: DS.hasMany('image'),
+  user: DS.belongsTo('user')
 });
