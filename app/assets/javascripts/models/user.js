@@ -1,4 +1,4 @@
-RaceBook.UserController = Ember.ObjectController.extend({
+RaceBook.User = DS.Model.extend({
   username: DS.attr(),
   email: DS.attr(),
   password_hash: DS.attr(),
