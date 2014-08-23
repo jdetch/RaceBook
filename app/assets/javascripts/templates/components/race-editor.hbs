@@ -1,37 +1,67 @@
 <form>
     <div class="row">
-      <div class="small-12 columns">
+      <div class="small-6 columns">
         Race title '{{race.name}}' <br/>
         <label> Race name:
             {{input type="text" value=race.name}}<br/>
         </label>
-        <label> Race city:
-            {{input type="text" value=race.city}}<br/>
-        </label>
-        <label> Race state:
-            {{input type="text" value=race.state}}<br/>
-        </label>
+      </div>
+      <div class="small-6 columns">
         <label> Date of race:
             {{input type="text" value=race.date}}<br/>
         </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-6 columns">
+        <label> Race city:
+            {{input type="text" value=race.city}}<br/>
+        </label>
+    </div>
+      <div class="small-6 columns">
+        <label> Race state:
+            {{input type="text" value=race.state}}<br/>
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-6 columns">
         <label> Race Type:
             {{view Ember.Select content=raceTypes value=race.race_type}}<br/>
         </label>
+      </div>
+      <div class="small-6 columns">
         <label> Total Time:
             {{input type="text" value=race.time}}<br/>
         </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-4 columns">
         <label> Place - By Age Group
             {{input type="text" value=race.place_agegroup}}<br/>
         </label>
+        </div>
+        <div class="small-4 columns">
         <label> Place - By Gender
             {{input type="text" value=race.place_gender}}<br/>
         </label>
+        </div>
+        <div class="small-4 columns">
         <label> Place - Overall
             {{input type="text" value=race.place_overall}}<br/>
         </label>
+        </div>
+      </div>
+    <div class="row">
+      <div class="small-12 columns">
         <label> Race Note:
         {{textarea value=race.note}}<br/>
         </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 columns">
         Images<br/>
         <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
         {{#each image in race.images}}
