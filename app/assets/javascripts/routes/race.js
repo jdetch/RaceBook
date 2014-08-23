@@ -4,7 +4,7 @@ RaceBook.RaceRoute = Ember.Route.extend({
   },
   actions: {
     redirectToHome: function(){
-        this.transitionToRoute('races');
+      this.transitionTo('races');
     }
   }
 });
