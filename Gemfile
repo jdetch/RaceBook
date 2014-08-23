@@ -42,7 +42,8 @@ gem 'spring',        group: :development
 
 gem "active_model_serializers"
 gem "ember-rails", "~>0.14"
-gem "ember-source", "~>1.1"
+gem "ember-source", "~>1.7.0"
+gem "ember-data-source", "~>1.0.0.beta.9"
 
 # add foundation to file directly
 gem 'foundation-rails'
