@@ -4,9 +4,7 @@ class Image < ActiveRecord::Base
   # This method associates the attribute ":race_image" with a file attachment
   has_attached_file :race_image,
   styles: {
-    thumb: '100x100>',
-    square: '200x200#',
-    medium: '300x300>'
+    thumb: '227x227>',
   },
   path: ":class/:id/:style/:filename"
 
