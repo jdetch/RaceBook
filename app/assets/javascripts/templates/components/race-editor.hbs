@@ -62,12 +62,14 @@
     </div>
     <div class="row">
       <div class="small-12 columns">
-        Images<br/>
-        <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
-        {{#each image in race.images}}
-            <li><image {{bind-attr src=image.url}}></li>
-        {{/each}}
-        </ul>
+        {{#if race.images}}
+          Images<br/>
+          <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+          {{#each image in race.images}}
+              <li><image {{bind-attr src=image.url}}></li>
+          {{/each}}
+          </ul>
+        {{/if}}
         {{#if race.id}}
             Upload Image(s):
             <br/>
