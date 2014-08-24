@@ -14,5 +14,19 @@
  *= require_self
  *= require foundation_and_overrides
  *= require alertify
-
  */
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.x.axis path {
+  display: none;
+}
