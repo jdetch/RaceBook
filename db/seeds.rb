@@ -7,6 +7,14 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Race.delete_all
 Image.delete_all
+User.delete_all
+
+User.create!(
+  id: 1,
+  username: 'test',
+  email: 'test@test.com',
+  password: 'password'
+  )
 
 Race.create!(
   name: '8th Annual Thompson Island 4K Trail Run 2008',
@@ -18,7 +26,8 @@ Race.create!(
   place_agegroup:87,
   place_gender: 92,
   place_overall: 219,
-  note: 'First Thompson Island run')
+  note: 'First Thompson Island run',
+  user_id: 1)
 
 Race.create!(
   name: 'Great Bay Half Marathon 2009',
@@ -30,7 +39,8 @@ Race.create!(
   place_agegroup: 67,
   place_gender: 615,
   place_overall: 1204,
-  note: '')
+  note: '',
+  user_id: 1)
 
 Race.create!(
   name: 'Boston Marathon 2009',
@@ -42,7 +52,8 @@ Race.create!(
   place_agegroup: 4798,
   place_gender: 8866,
   place_overall: 22015,
-  note: '')
+  note: '',
+  user_id: 1)
 
 Race.create!(
   name: 'JP Morgan Corporate Challenge 2009',
@@ -54,7 +65,8 @@ Race.create!(
   place_agegroup: 646,
   place_gender: 657,
   place_overall: 2003,
-  note: '')
+  note: '',
+  user_id: 1)
 
 Race.create!(
   name: '22nd Annual Jim Kane Sugar Bowl 5 Miler',
@@ -66,7 +78,8 @@ Race.create!(
   place_agegroup: 50,
   place_gender: 411,
   place_overall: 923,
-  note: '')
+  note: '',
+  user_id: 1)
 
 Race.create!(
   name: 'Blessing of the Fleet 10 Mile Road Race 2009',
@@ -78,7 +91,8 @@ Race.create!(
   place_agegroup: 273,
   place_gender: 970,
   place_overall: 2410,
-  note: '')
+  note: '',
+  user_id: 1)
 
 Race.create!(
   name: '9th Annual Thompson Island 4K Trail Run 2009',
@@ -90,7 +104,8 @@ Race.create!(
   place_agegroup: 92,
   place_gender: 92,
   place_overall: 261,
-  note: '')
+  note: '',
+  user_id: 1)
 
 Race.create!(
   name: 'Harwich Cranberry Harvest Half Marathon',
@@ -102,7 +117,8 @@ Race.create!(
   place_agegroup: 17,
   place_gender: 313,
   place_overall: 597,
-  note: '')
+  note: '',
+  user_id: 1)
 
 Race.create!(
   name: 'JP Morgan Corporate Challenge 2010',
@@ -114,7 +130,8 @@ Race.create!(
   place_agegroup: 2511,
   place_gender: 2546,
   place_overall: 6948,
-  note: '')
+  note: '',
+  user_id: 1)
 
 Race.create!(
   name: 'Blessing of the Fleet 10 Mile Road Race 2010',
@@ -126,7 +143,8 @@ Race.create!(
   place_agegroup: 221,
   place_gender: 1147,
   place_overall: 2592,
-  note: '')
+  note: '',
+  user_id: 1)
 
 Race.create!(
   name: 'JP Morgan Corporate Challenge 2011',
@@ -138,7 +156,8 @@ Race.create!(
   place_agegroup: 1568,
   place_gender: 1568,
   place_overall: 5279,
-  note: '')
+  note: '',
+  user_id: 1)
 
 Race.create!(
   name: 'Memphis Soul 5k 2011',
@@ -150,7 +169,8 @@ Race.create!(
   place_agegroup: 66,
   place_gender: 214,
   place_overall: 454,
-  note: '')
+  note: '',
+  user_id: 1)
 
 Race.create!(
   name: 'Thompson Island 4K Trail Race 2012',
@@ -162,7 +182,8 @@ Race.create!(
   place_agegroup: 134,
   place_gender: 134,
   place_overall: 544,
-  note: '')
+  note: '',
+  user_id: 1)
 
 Race.create!(
   name: 'Shipyard Old Port Half Marathon',
@@ -174,7 +195,8 @@ Race.create!(
   place_agegroup: 235,
   place_gender: 927,
   place_overall: 1517,
-  note: '')
+  note: '',
+  user_id: 1)
 
 Race.create!(
   name: 'Blessing of the Fleet 10 Mile Road Race 2013',
@@ -186,7 +208,8 @@ Race.create!(
   place_agegroup: 130,
   place_gender: 853,
   place_overall: 2022,
-  note: '')
+  note: '',
+  user_id: 1)
 
 Race.create!(
   name: 'NYCRUNS Frozen Penguin Half Marathon',
@@ -198,7 +221,8 @@ Race.create!(
   place_agegroup: 61,
   place_gender: 127,
   place_overall: 282,
-  note: '')
+  note: '',
+  user_id: 1)
 
 
 
