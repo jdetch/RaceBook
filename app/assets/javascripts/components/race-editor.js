@@ -1,6 +1,6 @@
 RaceBook.RaceEditorComponent = Ember.Component.extend({
   race: null,
-  raceTypes: ["5k", "10k", "Half Marathon", "Marathon", "Other"],
+  raceTypes: ["3.5 Miles", "4k", "5k", "5 Miles", "10k", "10 Miles", "Half Marathon", "Marathon", "Other"],
 
   setup: function (){
     // console.log(this.get('race'));
