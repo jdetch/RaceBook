@@ -10,10 +10,15 @@ RaceBook.RaceEditorComponent = Ember.Component.extend({
       var self = this;
       race.save().then(function(){
         self.sendAction('redirectToHome');
+        alertify.success("Race sucessfully created!");
       });
     },
     delete: function(race){
-      race.destroyRecord();
+      var self = this;
+      race.destroyRecord().then(function(){
+        self.sendAction('redirectToHome');
+        alertify.success("Race sucessfully deleted!");
+      });
     }
   }
 });
