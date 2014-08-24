@@ -20,7 +20,7 @@ class Api::RacesController < Api::ApiController
   end
 
   def update
-    race = Race.where(id: params[:id], user: @currentUser)
+    race = Race.where(id: params[:id], user: @currentUser).first
 
     race.update_attributes(race_params)
     render json: race
