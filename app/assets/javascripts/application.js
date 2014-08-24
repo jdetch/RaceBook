@@ -17,6 +17,7 @@
 //= require jquery
 //= require handlebars
 //= require ember
+//= require alertify
 //= require blueimp-file-upload/cors/jquery.postmessage-transport
 //= require blueimp-file-upload/cors/jquery.xdr-transport
 //= require blueimp-file-upload/vendor/jquery.ui.widget
@@ -32,7 +33,34 @@
 //= require ./race_book
 
 // for more details see: http://emberjs.com/guides/application/
-RaceBook = Ember.Application.create();
+RaceBook = Ember.Application.create({
+  ready: function(){
+    this.loadToken();
+    $.ajaxPrefilter(function(options, originalOptions, xhr) {
+      var isLocalRequest = options.url[0] === '/';
+      if(isLocalRequest) {
+        xhr.setRequestHeader('Authorization', 'Token token=' + RaceBook.get('token'));
+      }
+    });
+  },
+  loadToken: function(){
+    var token = this.getData('token');
+    if(token) {
+      this.set('token', token);
+    }
+  },
+  getData: function(key){
+    if(!Ember.isEmpty(this.get(key))) {
+      return this.get(key);
+    }
+
+    return localStorage[key];
+  },
+  setData: function(key, data) {
+    this.set(key, data);
+    localStorage[key] = JSON.stringify(data);
+  }
+});
 
 //= require_tree .
 
