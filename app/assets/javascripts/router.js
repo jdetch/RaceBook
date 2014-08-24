@@ -2,6 +2,7 @@
 
 RaceBook.Router.map(function() {
   this.route('signup');
+  this.route('login');
   this.route('races');
   this.route('races.images', { path: '/races/images' });
   this.route('race.new', { path: '/race/new' });
