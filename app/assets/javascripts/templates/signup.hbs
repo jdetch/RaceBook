@@ -3,8 +3,8 @@
     <h1>Sign Up Page</h1>
     Email: {{input type="text" value=model.email}}
     Username: {{input type="text" value=model.username}}
-    Password: {{input type="text" value=model.password_hash}}
-    <a {{action 'save' user}} class="button">Create Account</a><br/>
+    Password: {{input type="text" value=model.password}}
+    <a {{action 'save' model}} class="button">Create Account</a><br/>
   </div>
 </div>
 

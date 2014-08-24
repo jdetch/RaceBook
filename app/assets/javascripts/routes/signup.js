@@ -4,8 +4,12 @@ RaceBook.SignupRoute = Ember.Route.extend({
   },
   actions: {
     save: function(user){
-      alert('save is working!');
-      //user.save();
+    var self = this;
+    user.save().then(function(result){
+      RaceBook.setData('token', result.get('token'));
+      self.controllerFor('application').set('user', user);
+      self.transitionTo('races');
+    });
     }
   }
 });
