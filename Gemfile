@@ -59,3 +59,5 @@ gem 'dotenv-rails', :groups => [:development, :test]
 gem 'rails-assets-blueimp-file-upload'
 
 gem 'alertify-rails'
+
+gem "d3-rails"
