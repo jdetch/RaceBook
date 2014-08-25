@@ -16,6 +16,8 @@
  *= require alertify
  */
 
+ @import "colors";
+
 .axis path,
 .axis line {
   fill: none;
