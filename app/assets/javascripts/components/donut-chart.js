@@ -1,10 +1,10 @@
-var data = [
-  {network: 'fb', pageviews: 270},
-  {network: 'tw', pageviews: 449},
-  {network: 'gp', pageviews: 215},
-  {network: 'pi', pageviews: 385},
-  {network: 'li', pageviews: 141}
-];
+// var data = [
+//   {network: 'fb', pageviews: 270},
+//   {network: 'tw', pageviews: 449},
+//   {network: 'gp', pageviews: 215},
+//   {network: 'pi', pageviews: 385},
+//   {network: 'li', pageviews: 141}
+// ];
 
 RaceBook.DonutChartComponent = Ember.Component.extend({
   tagName: 'svg',
