@@ -1,0 +1,11 @@
+@import "colors";
+
+#footer {
+  padding-top: 2rem;
+  background: $blue;
+
+  p {
+    color: $white;
+    text-align: center;
+  }
+}
