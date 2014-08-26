@@ -11,6 +11,8 @@ RaceBook.Race = DS.Model.extend({
   note: DS.attr(),
   images: DS.hasMany('image'),
   user: DS.belongsTo('user'),
+  latitude: DS.attr(),
+  longitude: DS.attr(),
 
   raceYear: function() {
     return this.get('date').getFullYear();
