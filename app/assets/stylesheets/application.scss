@@ -22,4 +22,13 @@
   background-color: $qwhite;
  }
 
+ .button {
+  background-color: $blue;
+  color: $white;
+  border-radius: 10px;
+ }
+ .button:hover {
+  background-color: $darkblue;
+ }
+
 
