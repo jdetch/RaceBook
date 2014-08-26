@@ -63,3 +63,5 @@ gem 'rails-assets-leaflet'
 gem 'alertify-rails'
 
 gem "d3-rails"
+
+gem "geocoder"
