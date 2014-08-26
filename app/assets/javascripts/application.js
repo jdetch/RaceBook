@@ -34,6 +34,7 @@
 //= require ember-data
 //= require_self
 //= require ./race_book
+//= require_tree .
 
 // for more details see: http://emberjs.com/guides/application/
 RaceBook = Ember.Application.create({
@@ -65,6 +66,6 @@ RaceBook = Ember.Application.create({
   }
 });
 
-//= require_tree .
+
 
 $(function(){ $(document).foundation(); });

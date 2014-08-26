@@ -56,5 +56,15 @@ RaceBook.GraphsController = Ember.ArrayController.extend({
     });
 
     return  dataArray;
-  }.property('model.@each.date')
+  }.property('model.@each.date'),
+
+  zoom: 4,
+  center: L.latLng(40.714, -74.000),
+  content: [
+    { location: L.latLng(40.714, -74.000) },
+    { location: L.latLng(45.714, -73.000) },
+    { location: L.latLng(43.714, -72.000) }
+  ]
 });
+
+
