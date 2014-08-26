@@ -57,6 +57,8 @@ gem 'dotenv-rails', :groups => [:development, :test]
 
 # A Bower package served up as a gem; JavaScript packages
 gem 'rails-assets-blueimp-file-upload'
+gem 'rails-assets-ember-leaflet'
+gem 'rails-assets-leaflet'
 
 gem 'alertify-rails'
 

@@ -17,6 +17,8 @@
 //= require jquery
 //= require handlebars
 //= require ember
+//= require ember-leaflet
+//= require leaflet
 //= require alertify
 //= require d3
 //= require blueimp-file-upload/cors/jquery.postmessage-transport
