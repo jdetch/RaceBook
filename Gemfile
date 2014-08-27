@@ -67,3 +67,5 @@ gem 'alertify-rails'
 gem "d3-rails"
 
 gem "geocoder"
+
+gem 'rails_12factor', group: :production

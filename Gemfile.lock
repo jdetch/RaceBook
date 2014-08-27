@@ -141,6 +141,11 @@ GEM
     rails-assets-leaflet (0.7.3)
     rails-assets-leaflet-dist (0.7.2)
     rails-assets-leaflet.markerclusterer (0.4.0)
+    rails_12factor (0.0.2)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.2)
+    rails_stdout_logging (0.0.3)
     railties (4.1.4)
       actionpack (= 4.1.4)
       activesupport (= 4.1.4)
@@ -206,6 +211,7 @@ DEPENDENCIES
   rails-assets-blueimp-file-upload
   rails-assets-ember-leaflet
   rails-assets-leaflet
+  rails_12factor
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   spring
