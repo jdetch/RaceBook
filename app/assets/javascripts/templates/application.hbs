@@ -10,13 +10,12 @@
     <section class="top-bar-section">
       <!-- Right Nav Section -->
       <ul class="right">
-        <li class="has-dropdown">
-          <a href="#">Get Racing!</a>
-          <ul class="dropdown">
-            <li>{{#link-to 'signup'}}Sign Up{{/link-to}}</li>
-            <li class="active">{{#link-to 'login'}}Login{{/link-to}}</li>
-          </ul>
-        </li>
+        {{#if user.email}}
+          <li>{{#link-to 'logout'}}Logout{{/link-to}}</li>
+        {{else}}
+          <li>{{#link-to 'signup'}}Sign Up{{/link-to}}</li>
+          <li>{{#link-to 'login'}}Login{{/link-to}}</li>
+        {{/if}}
       </ul>
     </section>
   </nav>
