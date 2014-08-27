@@ -23,6 +23,10 @@
   background-color: $qwhite;
  }
 
+ .ember-view {
+  height: 100%;
+}
+
  .button {
   background-color: $blue;
   color: $white;
