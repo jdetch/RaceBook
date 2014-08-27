@@ -60,6 +60,8 @@ gem 'rails-assets-blueimp-file-upload'
 gem 'rails-assets-ember-leaflet'
 gem 'rails-assets-leaflet'
 
+gem 'leaflet-rails'
+
 gem 'alertify-rails'
 
 gem "d3-rails"
