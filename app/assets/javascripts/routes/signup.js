@@ -1,4 +1,9 @@
 RaceBook.SignupRoute = Ember.Route.extend({
+  activate: function() {
+    if(!Ember.isEmpty(this.controllerFor('application').get('user'))) {
+      this.transitionTo('races');
+    }
+  },
   model: function() {
     return this.store.createRecord('user');
   },
