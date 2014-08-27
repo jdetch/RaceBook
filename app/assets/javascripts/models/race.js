@@ -16,5 +16,14 @@ RaceBook.Race = DS.Model.extend({
 
   raceYear: function() {
     return this.get('date').getFullYear();
-  }.property('date')
+  }.property('date'),
+  markerObject: function() {
+    return L.marker([this.get('latitude'), this.get('longitude')]);
+  }.property('title', 'latitude', 'longitude'),
+  leafletMarkerObject: function() {
+    return {
+      location: L.latLng(this.get('latitude'), this.get('longitude')),
+      name: this.get('name')
+    };
+  }.property('title', 'latitude', 'longitude')
 });

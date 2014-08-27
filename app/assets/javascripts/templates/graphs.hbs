@@ -7,7 +7,7 @@
   <div class="small-12 columns">
     <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2">
       <li>Where you've raced: <br/>
-
+      {{view RaceBook.RaceMarkerView content=racesAsMarkers}}
       </li>
       <li>{{bar-graph width=475 height=475 data=raceTypesOverTime}}</li>
     </ul>

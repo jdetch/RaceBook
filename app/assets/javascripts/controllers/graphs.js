@@ -58,6 +58,13 @@ RaceBook.GraphsController = Ember.ArrayController.extend({
     return  dataArray;
   }.property('model.@each.date'),
 
+  racesAsMarkers: function() {
+    return this.get('model').mapBy('leafletMarkerObject').filterBy('location');
+  }.property('model.@each.name', 'model.@each.latitude', 'model.@each.longitude'),
+  raceMarkersObjects: function() {
+    return this.get('model').mapBy('markerObject');
+  }.property('model.@each.name', 'model.@each.latitude', 'model.@each.longitude'),
+
 });
 
 
