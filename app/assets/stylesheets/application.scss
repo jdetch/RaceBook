@@ -19,9 +19,9 @@
 
  @import "colors";
 
- body {
-  background-color: $qwhite;
- }
+ // body {
+ //  background-color: $qwhite;
+ // }
 
  .ember-view {
   height: 100%;
@@ -38,6 +38,12 @@
 
  #index-wrapper {
   text-align: center;
+
+  h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
  }
 
  #images {
