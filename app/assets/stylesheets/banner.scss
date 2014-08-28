@@ -1,33 +1,21 @@
 @import "colors";
 
 .banner {
-  background-image: image-url('http://imgur.com/TTpqhO9.jpg');
+  background-image: image-url('http://i.imgur.com/7jNLg8h.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: relative;
-  z-index: 1;
   height: 400px;
-  -webkit-filter: blur(4px);
-  -moz-filter: blur(4px);
-  -o-filter: blur(4px);
-  -ms-filter: blur(4px);
-  filter: blur(4px);
 }
 
 .banner-text {
   margin-top: 100px;
   font-size: 35px;
   color: white;
-  position: absolute;
-  z-index: 2;
-  top: 129px;
-  left: 300px;
+  padding-top: 90px;
 }
 
 .racing {
-  position: absolute;
-  z-index: 3;
-  top: 300px;
-  left: 700px;
+  background-position: center;
+  padding-top: 60px;
 }
