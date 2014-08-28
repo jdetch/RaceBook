@@ -20,7 +20,7 @@
  @import "colors";
 
 
- .ember-view {
+.ember-view {
   height: 100%;
 }
 
@@ -55,4 +55,13 @@
 .leaflet-container {
   height: 475px;
   width: 475px;
+}
+
+#back-to-races {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.underline {
+  text-decoration: underline;
 }
