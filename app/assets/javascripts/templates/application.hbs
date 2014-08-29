@@ -2,7 +2,13 @@
   <nav class="top-bar" data-topbar role="navigation">
     <ul class="title-area">
       <li class="name">
-        <h1 id="logo">{{#link-to 'index'}}RaceBook{{/link-to}}</h1>
+        <h1 id="logo">
+          {{#if user}}
+            {{#link-to 'races'}}RaceBook{{/link-to}}
+          {{else}}
+            {{#link-to 'index'}}RaceBook{{/link-to}}
+          {{/if}}
+        </h1>
       </li>
        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
       <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
@@ -10,7 +16,7 @@
     <section class="top-bar-section">
       <!-- Right Nav Section -->
       <ul class="right">
-        {{#if user.email}}
+        {{#if user}}
           <li>{{#link-to 'logout'}}Logout{{/link-to}}</li>
         {{else}}
           <li>{{#link-to 'signup'}}Sign Up{{/link-to}}</li>
@@ -23,11 +29,3 @@
 
 {{!-- Outlet is a placeholder that the router will fill in with the appropriate template, based on the current URL --}}
 {{outlet}}
-
-<div id="footer">
-  <div class="row">
-    <div class="small-12 columns">
-      <p>Developed by Jodi Detch</p>
-    </div>
-  </div>
-</div>
