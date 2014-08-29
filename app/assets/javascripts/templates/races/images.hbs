@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="small-12 columns">
+    <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+      {{#each image in images}}
+        <li><image {{bind-attr src=image}}></li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
