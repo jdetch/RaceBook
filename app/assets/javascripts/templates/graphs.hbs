@@ -7,7 +7,7 @@
   <div class="small-12 columns">
     <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2">
       <li>Where you've raced: <br/>
-      {{!-- {{view RaceBook.RaceMarkerView content=racesAsMarkers}} --}}
+        {{google-map markers=racesAsMarkers}}
       </li>
       <li>{{bar-graph width=475 height=475 data=raceTypesOverTime}}</li>
     </ul>
@@ -19,7 +19,10 @@
       <li>Total Races Per Year: <br/>
       {{donut-chart width=400 height=400 data=racesPerYear}}
       </li>
-      {{#link-to 'races.images'}}<li id="images">Images: <br/>{{/link-to}}
+      <li>
+        <div class="images">
+          {{#link-to 'races.images' class="button moments"}}Memorable Moments{{/link-to}}
+        </div>
       </li>
     </ul>
   </div>

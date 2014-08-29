@@ -6,6 +6,7 @@
   <div class="small-2 columns">
     {{#link-to 'race.new' class="button"}}Add New Race{{/link-to}}
     {{#link-to 'graphs' class="button"}}See Your Stats{{/link-to}}
+    {{#link-to 'races.images' class="button"}}View Your Images{{/link-to}}
   </div>
   <div class="small-10 columns">
       <table>
@@ -32,7 +33,7 @@
               <td>{{race.state}}</td>
               <td>{{date race.date}}</td>
               <td>{{race.race_type}}</td>
-              <td>{{race.time}}</td>
+              <td>{{race.timeFormatted}}</td>
               <td>{{race.place_agegroup}}</td>
               <td>{{race.place_gender}}</td>
               <td>{{race.place_overall}}</td>
