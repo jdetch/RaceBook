@@ -18,12 +18,10 @@ RaceBook.Race = DS.Model.extend({
     return this.get('date').getFullYear();
   }.property('date'),
   markerObject: function() {
-    return L.marker([this.get('latitude'), this.get('longitude')]);
+    return Ember.Object.create({
+      name: this.get('name'),
+      latitude: this.get('latitude'),
+      longitude: this.get('longitude')
+    });
   }.property('title', 'latitude', 'longitude'),
-  leafletMarkerObject: function() {
-    return {
-      location: L.latLng(this.get('latitude'), this.get('longitude')),
-      name: this.get('name')
-    };
-  }.property('title', 'latitude', 'longitude')
 });

@@ -14,7 +14,6 @@
  *= require_self
  *= require foundation_and_overrides
  *= require alertify
- *= require leaflet
  */
 
  @import "colors";
@@ -52,7 +51,7 @@
 }
 
 
-.leaflet-container {
+.map-canvas {
   height: 475px;
   width: 475px;
 }
