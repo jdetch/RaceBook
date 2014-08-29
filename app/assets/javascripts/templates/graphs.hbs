@@ -19,7 +19,10 @@
       <li>Total Races Per Year: <br/>
       {{donut-chart width=400 height=400 data=racesPerYear}}
       </li>
-      {{#link-to 'races.images'}}<li id="images">Images: <br/>{{/link-to}}
+      <li>
+        <div class="images">
+          {{#link-to 'races.images' class="button moments"}}Memorable Moments{{/link-to}}
+        </div>
       </li>
     </ul>
   </div>

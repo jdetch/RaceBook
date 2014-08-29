@@ -42,14 +42,25 @@
 
  }
 
- #images {
-  background-image: image-url('http://i.imgur.com/db6253Q.jpg');
+ .images {
+  background-image: image-url('http://i.imgur.com/vcjYe53.jpg?1');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 400px;
+  height: 475px;
+  width: 475px;
 }
 
+  .moments {
+  background-position: center;
+  position: relative;
+  vertical-align: center;
+  text-align: center;
+  height: 50px;
+  width: 214px;
+  margin-top: 240px;
+  margin-left: 120px;
+}
 
 .map-canvas {
   height: 475px;
