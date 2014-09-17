@@ -28,6 +28,7 @@ RaceBook is built on the following:
 * EmberJS
 * D3.js graphs
 * Amazon Cloudfront
+* Amazon S3
 * Google Maps API
 
 This project was conceptualized, scoped and developed in approximately one week.

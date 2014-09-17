@@ -3,7 +3,8 @@ RaceBook.GoogleMapComponent = Ember.Component.extend({
     var container = this.$('.map-canvas');
 
     var options = {
-      center: new google.maps.LatLng(40.71356,-74.00632),
+      center: new google.maps.LatLng(this.get("latitude"),
+      this.get("longitude")),
       zoom: 17,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       disableDefaultUI: true
